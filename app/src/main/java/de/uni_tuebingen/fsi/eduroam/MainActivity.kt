@@ -64,7 +64,7 @@ class MainActivity : Activity() {
 
     fun getCertificate(): X509Certificate {
         // Extract the certificate
-        val certificateStream = resources.openRawResource(R.raw.deutsche_telekom_root_ca_2)
+        val certificateStream = resources.openRawResource(R.raw.t_telesec_globalroot_class_2)
         val certificateFactory = CertificateFactory.getInstance("X.509")
         val certificate =
                 certificateFactory.generateCertificate(certificateStream) as X509Certificate
